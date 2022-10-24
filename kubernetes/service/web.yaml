@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: web
+  name: web
+  namespace: vote
+spec:
+  type: LoadBalancer
+  ports:
+  - name: "web-service"
+    port: 80
+    targetPort: 80
+  selector:
+    app: web
