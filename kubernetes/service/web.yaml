@@ -4,9 +4,9 @@ metadata:
   labels:
     app: web
   name: web
-  namespace: vote
+  namespace: web
 spec:
-  type: LoadBalancer
+  type: LoadBalancer 
   ports:
   - name: "web-service"
     port: 80
